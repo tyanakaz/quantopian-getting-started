@@ -4,5 +4,8 @@ services:
   app:
     build:
       context: .
+    command: jupyter notebook --port 8080 --ip=0.0.0.0 --allow-root
+    ports:
+      - 8080:8080
     volumes:
       - ./src:/src/app:rw

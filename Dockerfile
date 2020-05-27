@@ -19,4 +19,9 @@ RUN pip install poetry
 RUN poetry config virtualenvs.create false
 RUN poetry config virtualenvs.in-project true
 
+# コンテナ内で仮想環境の作成を無効
+RUN poetry install
+
+ENV PATH $PATH:/usr/local/lib/python3.8/site-packages
+
 CMD ["bash"]
