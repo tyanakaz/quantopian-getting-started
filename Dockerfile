@@ -1,8 +1,10 @@
 FROM python:3.8
-WORKDIR /src/app
 
+WORKDIR /src/app
 COPY src /src/app
+RUN chmod 775 /src/app
 ENV PYTHONPATH /src/app
+
 ENV LC_ALL=C.UTF-8 LANG=C.UTF-8
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
