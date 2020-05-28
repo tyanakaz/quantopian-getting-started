@@ -7,10 +7,12 @@ ENV PYTHONPATH /src/app
 
 ENV LC_ALL=C.UTF-8 LANG=C.UTF-8
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-  git \
-  vim \
-  && rm -rf /var/lib/apt/lists/*
+RUN set -x \
+    && apt-get update && apt-get install -y --no-install-recommends git vim \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN set -x \
+    && apt-get install -y chromium-browser
 
 # pipのアップデート
 RUN pip install --upgrade pip setuptools wheel
@@ -25,5 +27,11 @@ RUN poetry config virtualenvs.in-project true
 RUN poetry install
 
 ENV PATH $PATH:/usr/local/lib/python3.8/site-packages
+
+# WebDriver
+# RUN set -x \
+#     && wget https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip \
+#     && unzip chromedriver_linux64.zip \
+#     && rm -rf chromedriver_linux64.zip
 
 CMD ["bash"]
