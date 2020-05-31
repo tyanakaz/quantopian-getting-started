@@ -9,5 +9,5 @@ services:
       - 8080:8080
     volumes:
       - ./src:/src/app:rw
-     env_file:
-      - .env
+    env_file:
+      - ./.env
