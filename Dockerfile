@@ -11,9 +11,6 @@ RUN set -x \
     && apt-get update && apt-get install -y --no-install-recommends git vim \
     && rm -rf /var/lib/apt/lists/*
 
-RUN set -x \
-    && apt-get install -y chromium-browser
-
 # pipのアップデート
 RUN pip install --upgrade pip setuptools wheel
 # Poetryをインストール

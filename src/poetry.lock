@@ -362,6 +362,14 @@ version = "1.18.4"
 
 [[package]]
 category = "main"
+description = "Python wrapper for the OANDA REST-V20 API"
+name = "oandapyv20"
+optional = false
+python-versions = "*"
+version = "0.6.3"
+
+[[package]]
+category = "main"
 description = "Core utilities for Python packages"
 name = "packaging"
 optional = false
@@ -676,7 +684,7 @@ version = "3.5.1"
 notebook = ">=4.4.1"
 
 [metadata]
-content-hash = "ad1c163a8076ac0d89a8a26339cc5296b91caa66fa5f0800ea8932efbf1ee27e"
+content-hash = "8b663f59fd8b3dbc7f5ce5b8cd4a5886162980d9b799573b9fd43d137d0cbd5a"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -830,6 +838,9 @@ numpy = [
     {file = "numpy-1.18.4-cp38-cp38-win32.whl", hash = "sha256:f22273dd6a403ed870207b853a856ff6327d5cbce7a835dfa0645b3fc00273ec"},
     {file = "numpy-1.18.4-cp38-cp38-win_amd64.whl", hash = "sha256:1be2e96314a66f5f1ce7764274327fd4fb9da58584eaff00b5a5221edefee7d6"},
     {file = "numpy-1.18.4.zip", hash = "sha256:bbcc85aaf4cd84ba057decaead058f43191cc0e30d6bc5d44fe336dc3d3f4509"},
+]
+oandapyv20 = [
+    {file = "oandapyV20-0.6.3.tar.gz", hash = "sha256:173a56b41ab3a19315c2fbea6f9aa3f0c17f64ba84acff014d072c64c1844b28"},
 ]
 packaging = [
     {file = "packaging-20.4-py2.py3-none-any.whl", hash = "sha256:998416ba6962ae7fbd6596850b80e17859a5753ba17c32284f67bfff33784181"},
