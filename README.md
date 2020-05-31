@@ -7,7 +7,7 @@ docker-compose build
 
 ## コンテナにログイン
 ```
-docker-compose run app bash  
+docker-compose run app bash
 ```
 
 ## 実行
@@ -19,5 +19,3 @@ docker-compose run app python3 test.py
 ```
 python3 test.py
 ```
-# quantopian-getting-started
-# quantopian-getting-started
